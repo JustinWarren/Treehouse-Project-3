@@ -1,0 +1,202 @@
+/* Base Styles*/
+
+body {
+	font-family:'PT Serif', serif;
+	margin: 10px;
+}
+
+h3 {
+	color: white;
+}
+
+h2{
+	color:midnightblue;	
+}
+
+legend {
+	color:midnightblue;
+	font-size: 1.25em;
+}
+
+fieldset {
+	border:none;
+	padding-bottom: 0px;
+}
+
+input:focus {
+	color: midnightblue;
+	font-weight: bold;
+}
+	
+label {
+	font-size:.925em;
+}	
+
+
+/*Class styles*/
+
+.header {
+	background-color: midnightblue;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	letter-spacing:1px;
+}
+
+.top-section {
+	border-bottom: solid 5px midnightblue;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.main-form {
+	padding: 10px 0 20px 0;
+	border-top: solid 3px midnightblue;
+}
+
+.contact-info {
+	text-align: left;
+}
+
+.main-input {
+	display: flex;
+	flex-direction: column;  /***This displays the input fields as a column.  Need to target the container first!!***/
+	padding-bottom: 10px;
+}
+
+.main-input label {
+	text-align: left;
+	padding-bottom: 3px;
+	padding-top: 5px;
+}
+
+.main-input input {
+	height: 35px;
+}
+
+.buttons {
+	border-top: solid 2px midnightblue;
+	text-align: left;
+	padding-top: 10px;
+}
+
+.news-buttons {
+	display:inline-block;
+}
+
+.radio-buttons {
+	display:inline-block; /*This causes the buttons to be stacked on top of eachother.  Very important --In the html there must be div's between each button!!***/
+}
+
+.footer {
+	padding: 5px;
+	text-align: center;
+}
+/*******FORM STYLES ********/
+
+
+input[type=text] {
+	border-radius: 3px;
+	background-color:lightgray;  /***Makes background grey***/
+	border: none;
+}
+
+input[type=email] {
+	border-radius: 3px;
+	background-color:lightgray;  /***Makes background grey***/
+	border: none;
+}
+
+input[type=tel] {
+	border-radius: 3px;
+	background-color:lightgray;  /***Makes background grey***/
+	border: none;
+}
+
+input::placeholder{
+	text-align: right;
+	padding-right: 15px;
+}
+
+select {
+	background-color:lightgray;
+	height: 40px;
+	border: 1px dotted gray;
+	border-radius: 3px;
+}
+
+.btn {
+	background-color: #8de072;
+	border-radius: 3px;
+	margin-top: 15px;
+	height: 40px;
+	border:none;
+	cursor: pointer;
+	color:white;
+	font-size: 1.25em;
+	letter-spacing:1px;
+}
+
+.message-box{
+	background-color:lightgray;
+	border-radius: 3px;
+	border: none;
+	height: 100px;
+}
+
+input#zipcode {
+	width:50%;
+}
+
+.footer-buttons {
+	display:flex;
+	flex-direction: column;
+	padding:5px;
+}
+
+/**********Media Query************/
+
+@media (min-width: 768px) {
+	
+	body {
+		margin-top: 0;
+	}
+
+/****Class Types****/
+
+	.main-content {
+	margin-right: 25%;
+	margin-left: 25%;
+    }
+	
+	.main-input {
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.main-input label{
+		width: 30%;
+		margin-bottom: 5px;
+	}
+	
+	.main-input input {
+		width: 70%;
+		margin-bottom: 5px;
+	}
+	
+	.main-input select {
+		width: 70%;
+		margin-bottom: 5px;
+	}
+	
+	.top-section p {
+		font-size:.75em;
+	}
+	
+	input#zipcode {
+		width: 30%;
+	}
+	
+}
