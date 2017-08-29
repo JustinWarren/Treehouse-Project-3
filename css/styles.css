@@ -149,6 +149,12 @@ input#zipcode {
 	width:50%;
 }
 
+label[for="msg"] {
+	padding-top: 5px;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
 .footer-buttons {
 	display:flex;
 	flex-direction: column;
@@ -198,5 +204,7 @@ input#zipcode {
 	input#zipcode {
 		width: 30%;
 	}
+	
+	
 	
 }
